@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { -webkit-font-smoothing: antialiased; }
+  body {
+    @apply bg-surface-sunk text-ink-soft antialiased;
+    background-image:
+      radial-gradient(1200px 600px at 15% -10%, rgba(31,92,71,.06), transparent 60%),
+      radial-gradient(900px 500px at 90% 0%, rgba(138,117,56,.05), transparent 55%);
+    background-attachment: fixed;
+  }
+  ::selection { @apply bg-moss/15 text-ink; }
+  :focus-visible { @apply outline-none ring-2 ring-moss/60 ring-offset-2 ring-offset-surface-sunk; }
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+  input[type=number] { -moz-appearance: textfield; }
+}
+
+@layer utilities {
+  .tnum { font-variant-numeric: tabular-nums; }
+  .grain::before {
+    content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .5;
+    background-image: radial-gradient(rgba(15,22,19,.035) .5px, transparent .5px);
+    background-size: 4px 4px;
+  }
+}
