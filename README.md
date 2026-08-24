@@ -2,7 +2,7 @@
 
 Prototipo per il task Jet HR. Riceve una retribuzione annua lorda e restituisce il netto annuale e mensile, scomponendo ogni trattenuta che si interpone fra i due.
 
-**Demo:** _[inserire link dopo il deploy]_
+**Demo:** https://jethr-netcalculator-test.vercel.app
 
 ---
 
