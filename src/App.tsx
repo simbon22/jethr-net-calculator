@@ -426,10 +426,6 @@ export default function App() {
             (RAL 50.000 €, Lombardia, addizionale comunale 0,80%, 13 mensilità, 365 giorni,
             nessun familiare a carico): i valori coincidono, netto annuo compreso.
           </p>
-          <p className="mt-3">
-            Prototipo dimostrativo. Non sostituisce un cedolino elaborato da un consulente
-            del lavoro.
-          </p>
         </div>
       </motion.footer>
 
